@@ -8,7 +8,7 @@
 import Foundation
 
 @available(macOS 10.15, *)
-class OpenAIConnector: ObservableObject {
+public class OpenAIConnector: ObservableObject {
     /// This URL might change in the future, so if you get an error, make sure to check the OpenAI API Reference.
     let openAIURL = URL(string: Constants.completionURL)
     let openAIKey = "\(Keys.openAI)"
