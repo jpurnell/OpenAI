@@ -18,6 +18,10 @@ public class OpenAIConnector: ObservableObject {
         /// Modify this to change the personality of the assistant.
         ["role": "system", "content": "how are you today"]
     ]
+	
+	public init(messageLog: [[String : String]] = [["role": "system", "content": "how are you today"]]) {
+		self.messageLog = messageLog
+	}
     
 //    func command(_ prompt: String, _ information: String) -> String {
 //        return "\(prompt)\n\(information)"
