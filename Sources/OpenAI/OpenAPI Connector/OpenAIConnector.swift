@@ -19,7 +19,7 @@ public class OpenAIConnector: ObservableObject {
         ["role": "system", "content": "how are you today"]
     ]
 	
-	public init(messageLog: [[String : String]] = [["role": "system", "content": "how are you today"]]) {
+	public init(_ messageLog: [[String : String]] = [["role": "system", "content": "how are you today"]]) {
 		self.messageLog = messageLog
 	}
     
