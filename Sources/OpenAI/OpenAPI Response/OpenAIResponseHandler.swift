@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  OpenAIResponseHandler.swift
 //  
 //
 //  Created by Justin Purnell on 6/25/23.
@@ -8,7 +8,7 @@
 import Foundation
 
 struct OpenAIResponseHandler {
-    func decodeJson(jsonString: String) -> OpenAIResponse? {
+    public func decodeJson(jsonString: String) -> OpenAIResponse? {
         let json = jsonString.data(using: .utf8)!
         
         let decoder = JSONDecoder()

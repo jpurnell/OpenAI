@@ -7,6 +7,6 @@
 
 import Foundation
 
-func messageLogBuilder(prompt: String, relatedInformation: String) -> [[String: String]] {
+public func messageLogBuilder(prompt: String, relatedInformation: String) -> [[String: String]] {
 	return [["role": "system", "content": command(prompt, relatedInformation)]]
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Models: String {
+public enum Models: String {
     case gpt3_5Turbo = "gpt-3.5-turbo"
 	case gpt3_5Turbo_0301 = "gpt-3.5-turbo-0301"
 	case gpt3_5Turbo_0613 = "gpt-3.5-turbo-0613"

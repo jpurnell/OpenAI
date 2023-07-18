@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  sendToAssistantForResponse.swift
 //  
 //
 //  Created by Justin Purnell on 7/18/23.
@@ -9,7 +9,7 @@ import Foundation
 
 @available(macOS 10.15, *)
 extension OpenAIConnector {
-	func sendToAssistantForResponse<T: Codable>(_ prompt: String = "", _ description: String = "", decoding type: T.Type, from model: Models = Models.gpt3_5Turbo) -> T? {
+	public func sendToAssistantForResponse<T: Codable>(_ prompt: String = "", _ description: String = "", decoding type: T.Type, from model: Models = Models.gpt3_5Turbo) -> T? {
 		/// DON'T TOUCH THIS
 		var request = URLRequest(url: self.openAIURL!)
 		request.httpMethod = "POST"

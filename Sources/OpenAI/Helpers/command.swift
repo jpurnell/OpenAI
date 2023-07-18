@@ -6,6 +6,6 @@
 //
 
 import Foundation
-func command(_ prompt: String, _ information: String) -> String {
+public func command(_ prompt: String, _ information: String) -> String {
 	return "\(prompt)\n\(information)"
 }

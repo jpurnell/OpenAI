@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  OpenAIResponse.swift
 //  
 //
 //  Created by Justin Purnell on 6/25/23.
