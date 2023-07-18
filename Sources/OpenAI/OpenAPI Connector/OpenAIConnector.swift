@@ -11,7 +11,7 @@ import Foundation
 public class OpenAIConnector: ObservableObject {
     /// This URL might change in the future, so if you get an error, make sure to check the OpenAI API Reference.
     let openAIURL = URL(string: Constants.completionURL)
-    let openAIKey = "\(Keys.openAI)"
+    var openAIKey = ""
     
     /// This is what stores your messages. You can see how to use it in a SwiftUI view here:
     @Published var messageLog: [[String: String]] = [
@@ -19,7 +19,8 @@ public class OpenAIConnector: ObservableObject {
         ["role": "system", "content": "how are you today"]
     ]
 	
-	public init(_ messageLog: [[String : String]] = [["role": "system", "content": "how are you today"]]) {
+	public init(key: String, _ messageLog: [[String : String]] = [["role": "system", "content": "how are you today"]]) {
+		self.openAIKey = key
 		self.messageLog = messageLog
 	}
     
