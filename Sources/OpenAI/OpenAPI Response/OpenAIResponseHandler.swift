@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct OpenAIResponseHandler {
-    public func decodeJson(jsonString: String) -> OpenAIResponse? {
+public struct OpenAIResponseHandler {
+    func decodeJson(jsonString: String) -> OpenAIResponse? {
         let json = jsonString.data(using: .utf8)!
         
         let decoder = JSONDecoder()

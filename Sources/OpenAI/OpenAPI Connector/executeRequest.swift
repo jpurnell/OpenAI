@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  executeRequest.swift
 //  
 //
 //  Created by Justin Purnell on 6/25/23.
@@ -9,7 +9,7 @@ import Foundation
 
 @available(macOS 10.15, *)
 extension OpenAIConnector {
-    internal func executeRequest(request: URLRequest, withSessionConfig sessionConfig: URLSessionConfiguration?) -> Data? {
+    func executeRequest(request: URLRequest, withSessionConfig sessionConfig: URLSessionConfiguration?) -> Data? {
         let semaphore = DispatchSemaphore(value: 0)
         let session: URLSession
         if (sessionConfig != nil) {

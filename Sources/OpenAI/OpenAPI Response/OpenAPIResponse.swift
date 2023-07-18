@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OpenAIResponse: Codable {
+public struct OpenAIResponse: Codable {
     var id: String?
     var object: String?
     var created: Int?

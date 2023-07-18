@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  messageLogBuilder.swift
 //  
 //
 //  Created by Justin Purnell on 7/18/23.
