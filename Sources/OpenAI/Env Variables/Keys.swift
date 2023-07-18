@@ -10,5 +10,5 @@ import Foundation
 struct Keys: Codable {
     /// This is your Open API
 //    #error("Add your OpenAI API Key here. You can delete this error after.")
-	public static let openAI: String = "\(Keys.openAI)"
+	public static var openAI: String = "\(Keys.openAI)"
 }
