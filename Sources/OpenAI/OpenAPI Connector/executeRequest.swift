@@ -9,7 +9,7 @@ import Foundation
 
 @available(macOS 10.15, *)
 extension OpenAIConnector {
-    func executeRequest(request: URLRequest, withSessionConfig sessionConfig: URLSessionConfiguration?) -> Data? {
+    public func executeRequest(request: URLRequest, withSessionConfig sessionConfig: URLSessionConfiguration?) -> Data? {
         let semaphore = DispatchSemaphore(value: 0)
         let session: URLSession
         if (sessionConfig != nil) {

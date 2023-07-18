@@ -10,7 +10,7 @@ import Foundation
 @available(macOS 10.15, *)
 extension OpenAIConnector {
     /// This function makes it simpler to append items to messageLog.
-    func logMessage(_ message: String, messageUserType: MessageUserType) {
+    public func logMessage(_ message: String, messageUserType: MessageUserType) {
         var messageUserTypeString = ""
         switch messageUserType {
         case .user:
@@ -22,7 +22,7 @@ extension OpenAIConnector {
         messageLog.append(["role": messageUserTypeString, "content": message])
     }
     
-    enum MessageUserType {
+    public enum MessageUserType {
         case user
         case assistant
     }
