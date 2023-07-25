@@ -35,7 +35,7 @@ extension OpenAIConnector {
 			print("Sending Request:\n\(jsonStr)")
 			guard let response = try? JSONDecoder().decode(OpenAIResponse.self, from: requestData) else {print("Could not get OpenAI Response"); return nil }
 			let responseString = response.choices[0].message["content"]
-			print(responseString)
+//			print(responseString)
 			guard let responseStringData = responseString?.data(using: .utf8) else { print("could not get response string"); return nil }
 			guard let responseT = try? JSONDecoder().decode(type, from: responseStringData) else { print("could not decode classification Data"); return nil }
 			if let json = try? JSONSerialization.jsonObject(with: responseStringData, options: .mutableContainers),
